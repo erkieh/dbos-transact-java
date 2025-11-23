@@ -14,7 +14,11 @@ public class ServiceQImpl implements ServiceQ {
   @Override
   @Workflow
   public String simpleQWorkflow(String input) {
-    return input + input;
+      try {
+          Thread.sleep(10000L);
+      } catch (InterruptedException ignored) {
+      }
+      return input + input;
   }
 
   @Override

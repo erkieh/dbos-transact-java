@@ -155,7 +155,7 @@ public class QueuesTest {
     queueService.pause();
     Thread.sleep(2000);
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 50000; i++) {
       String id = "wfid" + i;
       var input = "inputq" + i;
       DBOS.startWorkflow(
